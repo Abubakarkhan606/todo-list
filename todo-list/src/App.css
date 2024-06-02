@@ -1,0 +1,91 @@
+body {
+  background-color: #17181f;
+  color: #ddd;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 300px;
+  height: 50rem;
+  margin: 20px auto;
+}
+
+form {
+  border: 3px solid #30313d;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+form input[type="text"] {
+  background: none;
+  color: #fff;
+  border: 0;
+  padding: 0 8px;
+  display: block;
+  width: 100%;
+}
+
+form button {
+  background-color: #61dafb;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.taskitem {
+  background-color: #30313d;
+  border-radius: 10px;
+  padding: 5px 9px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s linear;
+  position: relative;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-done {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+.taskitem svg {
+  /* height: 20px; */
+  width: 16px;
+  margin-right: 4px;
+  fill: #61dafb;
+}
+
+main h1,
+main h2 {
+  text-align: center;
+}
+
+.trash-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+}
+
+.trash-btn svg {
+  fill: #aaa;
+  height: 14px;
+  display: flex;
+  cursor: pointer;
+}
+
+.taskitem input {
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
